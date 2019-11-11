@@ -6,8 +6,7 @@ To build an image, first download the Imply distribution from the link above, pl
 
 ```
 export implyversion=3.1.5.2
-tar -xzf imply-$implyversion.tar.gz
-docker build -t imply:$implyversion --build-arg implyversion=$implyversion .
+docker build -t /imply:$implyversion --build-arg implyversion=$implyversion .
 ```
 
 To run the image in quickstart mode (single-machine, non-clustered):
