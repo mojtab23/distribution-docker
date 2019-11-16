@@ -47,4 +47,5 @@ stateStore:
 
 # vino change for sub path
 serverRoot: 'dashboard'
-
+# enable user management
+userMode: 'native-users'
