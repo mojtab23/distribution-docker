@@ -10,6 +10,9 @@ ADD     imply-$implyversion.tar.gz /opt/
 RUN     mkdir -p /mnt/imply/var && ln -snf /mnt/imply/var /opt/imply-${implyversion}/var
 RUN     ln -snf /opt/imply-${implyversion} /opt/imply
 
+# Copy our config
+COPY    config.yaml /opt/imply-${implyversion}/conf-quickstart/pivot/
+
 # Crack imply
 COPY    .imply-first-run /opt/imply-${implyversion}/var/pivot/
 
